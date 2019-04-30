@@ -15,3 +15,23 @@ Navigation Menu - will include links to other pages like a contact form
 Main Content - will talk about why I chose Libraryland and highlight my skills
 
 Footer - will include copyright information
+
+![Wireframe of the Landing Page](wireframes/wireframe-sketch.jpg)
+
+Header - will include my navigation menu and my name
+
+Navigation Menu - will include links to other pages like a contact form
+
+Main Content - will talk about why I chose Libraryland and highlight my skills
+
+Footer - will include copyright information
+
+![Wireframe of the Landing Page](wireframes/wireframe-sketch.jpg)
+
+Header - will include my navigation menu and my name
+
+Navigation Menu - will include links to other pages like a contact form
+
+Main Content - will talk about why I chose Libraryland and highlight my skills
+
+Footer - will include copyright information
