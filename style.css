@@ -290,7 +290,67 @@ footer {
   }
 }
 
+label {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 0.5em;
+}
+
+.form-input {
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 1em;
+  margin-bottom: 1.5em;
+  width: 100%;
+}
+
+.form-input:focus {
+  outline: none;
+  border: 2px solid #261f17;
+}
+
+[type="submit"] {
+  background: #ddbc7e;
+  color: #261f17;
+  width: 100%;
+  font-size: 1.5em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 4px;
+  border: 0;
+  padding: .5em;
+  cursor: pointer;
+}
+
+[type="submit"]:hover,
+[type="submit"]:focus {
+  background: #c49d75;
+}
+
+textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+.error {
+  border-color: #C62828;
+}
+
+.error-message {
+  color: #C62828;
+  margin: -1em 0 1.5em;
+  width: 100%;
+}
+
 @media screen and (min-width: 1065px) {
+  form {
+    width: 50%;
+    margin: 3em auto;
+  }
+
   .footer-column {
     max-width: 300px;
   }
