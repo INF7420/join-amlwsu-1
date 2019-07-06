@@ -11,9 +11,11 @@
 
 <body>
   <header>
-    <nav>
-      <a href="index.html"><img src="" alt="Axa Mei Liauw Logo"></a>
-      <ul>
+    <nav class="main-menu">
+      <a href="index.html" class="site-name"><img src="images/logo.png" alt="Axa Mei Liauw Logo"></a>
+      <input class="menu-btn" type="checkbox" id="menu-btn" />
+      <label class="menu-icon" for="menu-btn"><span class="navicon" aria-label="Toggle for menu"></span></label>
+      <ul class="main-nav">
         <li><a href="explore.html">Explore</a></li>
         <li><a href="blog.html">Blog</a></li>
         <li><a href="contact.html">Contact</a></li>
@@ -21,23 +23,56 @@
     </nav>
   </header>
   <main>
+    <form action="https://formspree.io/fm8846@wayne.edu" method="POST" data-validate>
+      <div>
+        <label for="name">Name</label>
+        <input id="name" type="text" name="name" class="form-input">
+      </div>
 
+      <div>
+        <label for="email">Email</label>
+        <input id="email" type="email" name="_replyto" class="form-input" required>
+      </div>
+
+      <div>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" class="form-input" rows="4" required></textarea>
+      </div>
+
+      <div>
+        <input type="submit" value="Send">
+      </div>
+
+      <input type="hidden" name="_subject" value="New submission from my portfolio website!" />
+      <input type="text" name="_gotcha" style="display:none" />
+    </form>
   </main>
   <footer>
-    <div>
+    <div class="footer-column">
       <h2>Start a project</h2>
       <p>We are ready for the challenge adobexd@mail.com</p>
     </div>
-    <div>
+    <div class="footer-column">
       <h2>Say hello</h2>
       <address>497 Evergreen Rd. Roseville, CA 95673</address>
-      <tel>+44 345 678 903</tel>
+      <a href="tel:+44 345 678 903">+44 345 678 903</a>
     </div>
-    <div>
+    <div class="footer-column">
       <h2>Jobs</h2>
       <p>We are always looking for talent adobexd@mail.com</p>
     </div>
+    <div class="social-media">
+      <ul>
+        <li><a href=""><img height="20" width="20" src="images/instagram.svg" alt="Instagram"></a></li>
+        <li><a href=""><img height="20" width="20" src="images/twitter.svg" alt="Twitter"></a></li>
+        <li><a href=""><img height="20" width="20" src="images/facebook.svg" alt="Facebook"></a></li>
+      </ul>
+    </div>
   </footer>
+  <script src="https://cdn.jsdelivr.net/gh/cferdinandi/validate@2.2.0/dist/validate.min.js"></script>
+  <script>
+    validate.init();
+  </script>
 </body>
 
 </html>
