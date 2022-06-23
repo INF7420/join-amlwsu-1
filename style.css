@@ -11,6 +11,9 @@ body {
   color: #261f17;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 a {
@@ -33,6 +36,7 @@ header {
 
 main {
   padding: 1rem 1rem 2rem;
+  flex-grow: 1;
 }
 
 footer {
@@ -48,12 +52,14 @@ nav a {
 
 .main-menu {
   position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .menu-icon {
   cursor: pointer;
-  display: inline-block;
-  float: right;
   padding: 28px 20px;
   position: relative;
   user-select: none;
@@ -128,6 +134,7 @@ nav a {
   opacity: 0;
   height: 0;
   transition: all 0.2s ease-out;
+  flex-basis: 100%;
 }
 
 .main-nav li {
@@ -165,7 +172,6 @@ footer {
   display: flex;
   flex-wrap: wrap;
   flex-basis: 0;
-  flex-grow: 1;
   padding: 2rem 1rem;
 }
 
@@ -236,7 +242,9 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
+    align-content: center;
     opacity: 1;
+    flex-basis: auto;
   }
 
   main {
@@ -244,7 +252,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 1200px;
+    width: 1200px;
     margin: 0 auto;
   }
 
